@@ -1,25 +1,40 @@
-.container{
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding: 20px;
+
+}
+
+.container {
+  flex-direction: column;
   border: solid;
-  background-color: white;
-  border-radius: 2rem;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   width: 250px;
   align-items: center;
+  background-color: white;
+  border-radius: 20px;
 }
-.container img{
+
+.container img {
+ 
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
 
-div{
+
+div {
   background-color: rgb(18, 37, 143);
 }
+
 #root {
-  max-width: 1500px;
+  max-width: 500px;
   margin: 0 auto;
-  padding: 10rem;/*aumenta tamaño del div azul*/
+  padding: 25rem;
+  /*aumenta tamaño del div azul*/
   text-align: center;
+  margin-top: 10px;
 }
 
 .logo {
@@ -28,9 +43,11 @@ div{
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -39,6 +56,7 @@ div{
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -51,15 +69,14 @@ div{
 }
 
 .card {
-  padding: 2em;
-  
+  padding: 5em;
 }
 
 .read-the-docs {
   color: #888;
 }
 
-.containerDetails{
+.containerDetails {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,14 +85,21 @@ div{
   border-radius: 2em;
 }
 
-button{
-  border:black;
+.containerTitle{
+  background-color: greenyellow;
+  border: gray 8px dashed ;
+  border-radius: 20px;
+}
+
+button {
+  border: black;
   border-radius: 10em;
-  background-color: rgb(121, 7, 7); /* For browsers that do not support gradients */
-  background-image: linear-gradient(rgb(121, 7, 7), red);
+  background-color: rgb(121, 119, 7);
+  /* For browsers that do not support gradients */
+  background-image: linear-gradient(rgb(119, 121, 7), rgb(43, 255, 0));
   color: white;
 }
 
-h1{
+h1 {
   color: white;
 }
